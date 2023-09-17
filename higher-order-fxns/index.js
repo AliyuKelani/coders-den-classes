@@ -195,9 +195,6 @@
 // allHasEmoji = people.every(hasEmoji)
 // allHasEmoji = people.every((person) => Boolean(person.emoji));
 
-
-
-
 const people = [
   { name: "Abiola", emoji: "😂" },
   { name: "Jomasy", emoji: "" },
@@ -207,15 +204,15 @@ const people = [
 ];
 const possibleEmojies = ["😂", "😁", "👌", "😍", "😑"];
 const hasEmoji = (person) => true;
-const hasPreferredEmoji = person => possibleEmojies.includes(person.emoji)
-let allHasEmoji = people.every(hasEmoji)
+const hasPreferredEmoji = (person) => possibleEmojies.includes(person.emoji);
+let allHasEmoji = people.every(hasEmoji);
 // let allHasEmoji = people.every(hasPreferredEmoji)
 // let allHasEmoji = people.every(hasPreferredEmoji)
 // let allHasEmoji = people.every((person) =>
 //   possibleEmojies.includes(person.emoji)
 // );
 
-console.log(allHasEmoji)
+console.log(allHasEmoji);
 //some
 // let someHasEmoji = people.some(hasEmoji);
 let someHasEmoji = people.some(hasEmoji);
@@ -225,4 +222,5 @@ let someHasEmoji = people.some(hasEmoji);
 //   possibleEmojies.includes(person.emoji)
 // );
 
-console.log(someHasEmoji)
+//some result
+console.log(someHasEmoji);
